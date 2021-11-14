@@ -1,0 +1,31 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2021-11-14T17:37:20-05:00",
+    "name": "Forge 1.17.1",
+    "author": "support@gamearoodev.com",
+    "description": null,
+    "features": null,
+    "images": [
+        "ghcr.io\/pterodactyl\/yolks:java_16"
+    ],
+    "file_denylist": [],
+    "startup": "bash run.sh",
+    "config": {
+        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"enable-query\": \"true\",\r\n            \"server-port\": \"{{server.build.default.port}}\",\r\n            \"query.port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \")! For help, type \"\r\n}",
+        "logs": "{}",
+        "stop": "stop"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/ash\r\n# Paper Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n\r\ncd \/mnt\/server\r\n\r\n\r\n\r\n\r\ncurl -o forge1-7-1.zip https:\/\/gamearoo.top\/downloads\/1.17.1mods.zip\r\n\r\n\r\ncurl -o eula.txt https:\/\/gamearoo.top\/downloads\/eula.txt\r\ncurl -o README.md https:\/\/gamearoo.top\/downloads\/readme.txt\r\n\r\nif [ ! -f server.properties ]; then\r\n    echo -e \"Downloading MC server.properties\"\r\n    curl -o server.properties https:\/\/gamearoo.top\/downloads\/server.properties\r\nfi\r\nmkdir defaultconfigs\r\nmkdir mods\r\nunzip forge1-7-1.zip\r\n\r\necho \"Done installing please read README.md Before using the server :)\"",
+            "container": "ghcr.io\/pterodactyl\/installers:alpine",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": []
+}

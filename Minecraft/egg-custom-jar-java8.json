@@ -4,10 +4,10 @@
         "version": "PTDL_v1",
         "update_url": null
     },
-    "exported_at": "2021-11-23T15:10:34-05:00",
+    "exported_at": "2021-11-23T15:13:09-05:00",
     "name": "Custom jar (java 8)",
     "author": "support@gamearoodev.com",
-    "description": "Use a custom jar for 1.15.2 and under",
+    "description": "Use a custom jar for jars that use java8",
     "features": null,
     "images": [
         "ghcr.io\/pterodactyl\/yolks:java_8"

@@ -4,10 +4,10 @@
         "version": "PTDL_v1",
         "update_url": null
     },
-    "exported_at": "2021-11-23T15:07:35-05:00",
+    "exported_at": "2021-11-23T15:10:39-05:00",
     "name": "Custom jar (java 16)",
     "author": "support@gamearoodev.com",
-    "description": "Use a custom jar for 1.16.5, 1.17, and 1.17.1",
+    "description": "Use a custom jar for jars that use java16",
     "features": null,
     "images": [
         "ghcr.io\/pterodactyl\/yolks:java_16"

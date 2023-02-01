@@ -10,7 +10,10 @@
     "description": "a generic discord js bot egg\r\n\r\nThis will clone a git repo for a bot. it defaults to master if no branch is specified.\r\n\r\nInstalls the node_modules on install. If you set user_upload then I assume you know what you are doing.",
     "features": null,
     "images": [
-        "quay.io\/parkervcp\/pterodactyl-images:debian_nodejs-16"
+        "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "ghcr.io\/parkervcp\/yolks:nodejs_16",
+        "ghcr.io\/parkervcp\/yolks:nodejs_15",
+        "ghcr.io\/parkervcp\/yolks:nodejs_14",
     ],
     "file_denylist": [],
     "startup": "\/usr\/local\/bin\/node \/home\/container\/{{BOT_JS_FILE}}",

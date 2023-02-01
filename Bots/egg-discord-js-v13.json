@@ -5,7 +5,7 @@
         "update_url": null
     },
     "exported_at": "2021-11-14T19:11:41-05:00",
-    "name": "Discord.js v13",
+    "name": "Discord.js",
     "author": "support@gamearoodev.com",
     "description": "a generic discord js bot egg\r\n\r\nThis will clone a git repo for a bot. it defaults to master if no branch is specified.\r\n\r\nInstalls the node_modules on install. If you set user_upload then I assume you know what you are doing.",
     "features": null,

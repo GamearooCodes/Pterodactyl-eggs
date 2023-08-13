@@ -13,7 +13,7 @@
         "ghcr.io\/parkervcp\/yolks:nodejs_17",
         "ghcr.io\/parkervcp\/yolks:nodejs_16",
         "ghcr.io\/parkervcp\/yolks:nodejs_15",
-        "ghcr.io\/parkervcp\/yolks:nodejs_14",
+        "ghcr.io\/parkervcp\/yolks:nodejs_14"
     ],
     "file_denylist": [],
     "startup": "\/usr\/local\/bin\/node \/home\/container\/{{BOT_JS_FILE}}",
